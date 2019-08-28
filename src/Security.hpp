@@ -5,6 +5,8 @@ namespace Verwaltungsschale
 {
     class Security
     {
+    public:
+
     };
 }
 

@@ -5,12 +5,13 @@
 
 using namespace Verwaltungsschale::modeling;
 
-namespace Verwaltungsschale::common
-{
-    class Qualifiable
-    {
-        std::vector<Constraint> qualifier;
-    };
+namespace Verwaltungsschale {
+    namespace common {
+        class Qualifiable {
+        public:
+            std::vector<Constraint> qualifier;
+        };
+    }
 }
 
 #endif

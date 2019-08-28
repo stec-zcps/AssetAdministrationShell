@@ -20,6 +20,8 @@ namespace Verwaltungsschale
         Security security;
         Verwaltungsschale::common::referencing::Reference derivedFrom;
 
+        AssetAdministrationShell() = default;
+
         std::vector<Verwaltungsschale::dictionaries::ConceptDictionary> conceptDictionaries;
         std::vector<Verwaltungsschale::View> views;
         Verwaltungsschale::Asset asset;

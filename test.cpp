@@ -1,13 +1,20 @@
 #include "src/AssetAdministrationShell.hpp"
 
 class meinSubmodell : public Verwaltungsschale::Submodel{
+public:
     std::string test;
+
+    meinSubmodell(Qualifier qualifier) : Verwaltungsschale::Submodel(qualifier) {
+        
+    }
 };
 
 class meineAAS : public Verwaltungsschale::AssetAdministrationShell{
 public:
     meineAAS(){
-        submodels.emplace_back(meinSubmodell());
+        Qualifier q ("type");
+
+        submodels.emplace_back(meinSubmodell(q));
     }
 };
 
@@ -15,3 +22,6 @@ public:
 int main(int args, char** argv){
     meineAAS aas;
 }
+
+
+

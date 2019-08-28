@@ -3,12 +3,12 @@
 
 using namespace Verwaltungsschale::common;
 
-namespace Verwaltungsschale::dictionaries
-{
-    class ConceptDictionary : Referable
-    {
-        std::vector<ConceptDescription> conceptDescriptions;
-    };
+namespace Verwaltungsschale {
+    namespace dictionaries {
+        class ConceptDictionary : Referable {
+            std::vector<ConceptDescription> conceptDescriptions;
+        };
+    }
 }
 
 #endif

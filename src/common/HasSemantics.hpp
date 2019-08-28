@@ -1,12 +1,13 @@
 #ifndef VERWALTUNGSSCHALE_referencing_HPP_HasSemantics
 #define VERWALTUNGSSCHALE_referencing_HPP_HasSemantics
 
-namespace Verwaltungsschale::common
-{
-    class HasSemantics
-    {
-        referencing::Reference semanticId;
-    };
+namespace Verwaltungsschale {
+    namespace common {
+        class HasSemantics {
+        public:
+            referencing::Reference semanticId;
+        };
+    }
 }
 
 #endif

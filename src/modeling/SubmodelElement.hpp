@@ -3,11 +3,11 @@
 
 using namespace Verwaltungsschale::common;
 
-namespace Verwaltungsschale::modeling
-{
-    class SubmodelElement : HasDataSpecification, Referable, Qualifiable, HasSemantics, HasKind
-    {
-    };
+namespace Verwaltungsschale {
+    namespace modeling {
+        class SubmodelElement : HasDataSpecification, Referable, Qualifiable, HasSemantics, HasKind {
+        };
+    }
 }
 
 #endif

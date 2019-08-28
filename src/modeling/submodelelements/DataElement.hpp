@@ -2,9 +2,11 @@
 
 using namespace Verwaltungsschale::modeling;
 
-namespace Verwaltungsschale::modeling::submodelelements
-{
-    class DataElement : SubmodelElement
-    {
-    };
+namespace Verwaltungsschale {
+    namespace modeling {
+        namespace submodelelements {
+            class DataElement : SubmodelElement {
+            };
+        }
+    }
 }

@@ -3,13 +3,15 @@
 
 #include "OperationVariable.hpp"
 
-namespace Verwaltungsschale::modeling::submodelelements
-{
-    class Operation : SubmodelElement
-    {
-        std::vector<OperationVariable> in;
-        std::vector<OperationVariable> out;
-    };
+namespace Verwaltungsschale {
+    namespace modeling {
+        namespace submodelelements {
+            class Operation : SubmodelElement {
+                std::vector<OperationVariable> in;
+                std::vector<OperationVariable> out;
+            };
+        }
+    }
 }
 
 #endif

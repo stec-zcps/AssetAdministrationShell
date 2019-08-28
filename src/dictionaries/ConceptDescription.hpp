@@ -4,12 +4,14 @@
 #include <vector>
 #include <string>
 
-namespace Verwaltungsschale::dictionaries
-{
-    class ConceptDescription : HasDataSpecification, Identifiable
-    {
-        std::vector<Reference> isCaseOf;
-    };
+namespace Verwaltungsschale {
+    namespace dictionaries {
+        class ConceptDescription : HasDataSpecification, Identifiable {
+            ConceptDescription() = default;
+
+            std::vector<Reference> isCaseOf;
+        };
+    }
 }
 
 #endif

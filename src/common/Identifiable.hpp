@@ -5,14 +5,18 @@
 #include "Identifier.hpp"
 #include "../AdministrativeInformation.hpp"
 
-namespace Verwaltungsschale::common
-{
-    class Identifiable : Referable
-    {
-    public:
-        AdministrativeInformation administrativeInformation;
-        Identifier identification;
-    };
+namespace Verwaltungsschale {
+    namespace common {
+        class Identifiable : Referable {
+        public:
+            AdministrativeInformation administrativeInformation;
+            Identifier identification;
+
+            Identifiable() : identification(identification) {
+
+            }
+        };
+    }
 }
 
 #endif

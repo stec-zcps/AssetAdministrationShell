@@ -7,6 +7,9 @@ namespace Verwaltungsschale
 {
     class Asset : HasDataSpecification, Identifiable, HasKind
     {
+    public:
+        Asset() = default;
+
         Verwaltungsschale::common::referencing::Reference assetIdentificationModel; //Referenz auf Submodels
     };
 }

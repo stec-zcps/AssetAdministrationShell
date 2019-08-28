@@ -3,12 +3,13 @@
 
 using namespace Verwaltungsschale::common::referencing;
 
-namespace Verwaltungsschale::modeling
-{
-    class Formula : Constraint
-    {
-        std::vector<Reference> dependsOn;
-    };
+namespace Verwaltungsschale {
+    namespace modeling {
+        class Formula : Constraint {
+        public:
+            std::vector<Reference> dependsOn;
+        };
+    }
 }
 
 #endif
