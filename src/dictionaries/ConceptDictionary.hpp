@@ -7,7 +7,7 @@ namespace Verwaltungsschale::dictionaries
 {
     class ConceptDictionary : Referable
     {
-        ConceptDescription conceptDescription;
+        std::vector<ConceptDescription> conceptDescriptions;
     };
 }
 

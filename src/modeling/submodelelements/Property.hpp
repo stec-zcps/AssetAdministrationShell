@@ -5,7 +5,8 @@ namespace Verwaltungsschale::modeling::submodelelements
 {
     class Property : DataElement
     {
-        std::string value;
+        Verwaltungsschale::common::types::anySimpleTypedef valueType;
+        Verwaltungsschale::common::types::PropertyValueType value;
         Reference valueId;
     };
 }

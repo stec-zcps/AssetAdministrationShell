@@ -5,28 +5,13 @@ namespace Verwaltungsschale::common
 {
     class Identifier
     {
-        std::string id;
-        referencing::IdentifierType identifierType;
     public:
+        Verwaltungsschale::common::types::Id id;
+        referencing::IdentifierType identifierType;
 
-        std::string getId()
-        {
-            return id;
-        }
-
-        void setId(std::string id)
-        {
-            this->id = id;
-        }
-
-        referencing::IdentifierType getIdentifierType()
-        {
-            return identifierType;
-        }
-
-        void setIdentifierType(referencing::IdentifierType identifierType)
-        {
-            this->identifierType = identifierType;
+        Identifier(Verwaltungsschale::common::types::Id id_, referencing::IdentifierType identifierType_){
+            id = id_;
+            identifierType = identifierType_;
         }
     };
 }

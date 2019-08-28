@@ -7,8 +7,9 @@ namespace Verwaltungsschale
 {
     class Submodel : HasDataSpecification, HasKind, HasSemantics, Identifiable, Qualifiable
     {
-        std::string getSubmodelElements();
-        void setSubmodelElements(std::vector<Verwaltungsschale::modeling::SubmodelElement> submodelElements);
+    public:
+        Qualifier qualifier;
+        std::vector<SubmodelElement> elements;
     };
 }
 

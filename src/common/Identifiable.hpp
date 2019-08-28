@@ -9,6 +9,7 @@ namespace Verwaltungsschale::common
 {
     class Identifiable : Referable
     {
+    public:
         AdministrativeInformation administrativeInformation;
         Identifier identification;
     };
